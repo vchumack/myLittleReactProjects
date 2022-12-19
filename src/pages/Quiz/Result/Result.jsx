@@ -7,9 +7,7 @@ export const Result = ({correctAnswers}) => {
       <div className={styles.result}>
 			<img alt="win"  src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
 			<h2>You answered {correctAnswers} questions out of {questions.length} correctly</h2>
-         <a href='/quiz'>
-            <Button text="try again"/>
-         </a>
+            <Button onClick={()=> window.location.reload()} text="try again"/>
 		</div>
    )
 };
