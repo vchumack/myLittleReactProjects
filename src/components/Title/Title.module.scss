@@ -1,0 +1,36 @@
+.container {
+   text-align: center;
+}
+
+.title {
+   position: relative;
+   font-size: 5vw;
+   color: #b7aac5;
+   -webkit-text-stroke: 2px rebeccapurple;
+}
+
+.container span {
+   width: max-content;
+   font-size: 5vw;
+
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+   z-index: 2;
+   color: rebeccapurple;
+   animation: animate 4s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+
+   0%,
+   100% {
+      clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 78% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+   }
+
+   50% {
+      clip-path: polygon(0% 68%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+   }
+}

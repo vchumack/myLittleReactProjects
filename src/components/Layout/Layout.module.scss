@@ -1,0 +1,27 @@
+@import "src/shared/styles/mixins.scss";
+
+.header {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.menuList {
+   @include flex(center);
+   list-style: none;
+
+}
+
+.menuLink {
+   display: inline-block;
+   text-decoration: none;
+   padding: 10px 15px;
+   color: rebeccapurple;
+   border: 1px solid rebeccapurple;
+
+   &:focus,
+   &:hover {
+      color: white;
+      background-color: rebeccapurple;
+      border: 1px solid white;
+   }
+}
